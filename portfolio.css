@@ -3,67 +3,66 @@ header {
   justify-content: flex-end;
 }
 
-section{
-    background-image: url(Icon/header-illsutration-mobile@2x.png);
-    background-size: 100%;
+section {
+  background-image: url(Icon/header-illsutration-mobile@2x.png);
+  background-size: 100%;
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-    margin-top: 130px;
-    margin-left: 27px;
-    margin-right: 27px;
-    margin-bottom: 7px;
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin-top: 130px;
+  margin-left: 27px;
+  margin-right: 27px;
+  margin-bottom: 7px;
 }
 
-span{
-    color: #36B37E;
+span {
+  color: #36b37e;
 }
 
-p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    
+p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
 }
 
-.icon{
-    display: flex;
-    justify-content: center;
+.icon {
+  display: flex;
+  justify-content: center;
 }
 
-.social{
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    gap: 15px;
-    align-items: center;
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 15px;
+  align-items: center;
 }
 
-.social li{
-    list-style: none;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
+.social li {
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 }
 
-.down-arrow{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.down-arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
