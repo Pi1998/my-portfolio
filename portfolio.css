@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  
 }
 
 header {
@@ -28,7 +27,7 @@ section {
 }
 
 .intro h1 {
-  color: #172B4D;
+  color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -51,11 +50,11 @@ section {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding:0;
+  padding: 0;
 }
 
 .text {
-  color: #172B4D;
+  color: #172b4d;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +63,6 @@ section {
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
-  
 }
 
 .icon {
