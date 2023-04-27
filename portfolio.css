@@ -10,12 +10,13 @@ header {
 
 nav img {
   padding-right: 30px;
+  padding-top: 20px;
 }
 
 section {
   background-image: url(Icon/header-illsutration-mobile@2x.png);
   background-size: 100%;
-  background-position: -4px right;
+  background-position: bottom -4px right;
   background-repeat: no-repeat;
 }
 
@@ -34,10 +35,10 @@ section {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  margin-top: 130px;
-  margin-left: 27px;
-  margin-right: 27px;
-  margin-bottom: 3px;
+  margin-top: 65px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 0.5%;
 }
 
 .intro .intro2 {
@@ -48,8 +49,8 @@ section {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1%;
+  margin-bottom: 2.5%;
   padding: 0;
 }
 
@@ -61,8 +62,9 @@ section {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 0 10px 5px 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 .icon {
@@ -76,6 +78,8 @@ section {
   padding: 0;
   gap: 15px;
   align-items: center;
+  margin-top: 1%;
+  margin-bottom: 10%;
 }
 
 .social li {
@@ -88,5 +92,6 @@ section {
 .down-arrow {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
