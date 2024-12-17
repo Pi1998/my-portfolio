@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/popup.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+      <header class="header-wrapper">
+        <nav>
+            <div class="navbtn">
+                <ul class="desktop-menu">
+                    <li><a href="#portfolio-section">Portfolio</a></li>
+                    <li><a href="#aboutme-section">About</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+                <div class="mobile-menu disable-scroll">
+                    <ul>
+                        <li><a href="#portfolio-section" onclick="closeMenu()">Portfolio</a></li>
+                        <li><a href="#aboutme-section" onclick="closeMenu()">About</a></li>
+                        <li><a href="#contact-section" onclick="closeMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hamburger-container">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="first-intro">
+        <div class="intro">
+            <h1>
+                Hey there.
+                I'm Pi.
+            </h1>
+            <p class="intro2">
+                I'm a software developer
+            </p>
+            <p class="text">
+                I can help you build a product , feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                <span>don’t hesitate to contact me.</span>
+            </p>
+        </div>
+        <div class="icon">
+            <ul class="social">
+                <li>
+                    <a href="https://twitter.com/@shinn_pi"><img src="/Icon/twitter.svg" alt="Twitter Icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/shinn-thant-swam-ye-4171a8257/"><img src="/Icon/Linkedin_icon.svg" alt="Linkedin Icon"></a>
+                </li>
+                <li>
+                    <a href="https://medium.com/@shinnthantswamye.edu1"><img src="/Icon/medium.svg" alt="Medium Icon"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Pi1998"><img src="/Icon/github.svg" alt="Github Icon"></a>
+                </li>
+                <li>
+                    <a href="https://wellfound.com/u/shinn-thant-swam-ye"><img src="/Icon/angellist.svg" alt="Angellist Icon"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="down-arrow">
+            <img src="/Icon/Disabled.png" alt="Button for next page">
+        </div>
+    </section>
+
+    <section id ="portfolio-section" class="portfolio-container">
+        <div class="heading1">
+            <h2 class="heading">My Recent Works</h2>
+            <div class="indicator">
+                <img src="/Icon/Indicator.png" alt="Indicator Icon">
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutme-section">
+        <div class="abt-me">
+            <h2 class="head-abt-me">
+                About me
+            </h2>
+            <p class="txt-abt-me">
+                I can help you build a product , feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                <span>don’t hesitate to contact me.</span>
+            </p>
+
+            <a href="public/resume/pi_resume.pdf" download="ShinnThantSwamYe(Pi)_Resume" target="_blank">
+                <button class="btn-project">Get my resume</button>
+            </a>
+              
+        </div>
+        <ul class="resume-container">
+            <li class="resume-items">
+                <img src="/Icon/Language.png" alt="Language Icon" class="card-icons">
+                <p class="item-head">Languages</p>
+                <ul class="item-content">
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </li>
+            <li class="resume-items">
+                <img src="/Icon/Frame.png" alt="Framework Icon" class="card-icons">
+                <p class="item-head">Frameworks</p>
+                <ul class="item-content">
+                    <li>React.js</li>
+                </ul>
+            </li>
+            <li class="resume-items">
+                <img src="/Icon/Skill.png" alt="Skill Icon" class="card-icons">
+                <p class="item-head">Skills</p>
+                <ul class="item-content">
+                    <li>Version Control</li>
+                    <li>CLI</li>
+                    <li>Web Development</li>
+                    <li>Vite</li>
+                    <li>NPM</li>
+                    <li>Database Management</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact me section -->
+    <section id="contact-section">
+        <div class="contact-section">
+            <div class="end-text">
+                <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                </p>
+            </div>
+            <div class="form-container">
+                <form class="contact-form" id="form" action="https://formspree.io/f/mvonljda" method="POST">
+                    <div class="form-group">
+                        <label for="full-name"></label>
+                        <input type="text" id="full-name" name="full-name" placeholder="Full Name" required
+                            maxlength="30">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"></label>
+                        <textarea id="message" name="message" placeholder="Hey, I'd like to connect with you about..."
+                            required maxlength="500"></textarea>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Get in touch" class="form-btn" id="btn">
+                        <p id="error-msg">The email should be in lowercase!</p>
+                    </div>
+
+                </form>
+                <div class="email-container">
+                    <p class="email-text">shinnthantswamye.pi@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div class="icon-section">
+            <div class="icon">
+                <ul class="social">
+                    <li>
+                        <a href="https://twitter.com/@shinn_pi"><img src="/Icon/twitter.svg" alt="Twitter Icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/shinn-thant-swam-ye-4171a8257/"><img src="/Icon/Linkedin_icon.svg" alt="Linkedin Icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/@shinnthantswamye.edu1"><img src="/Icon/medium.svg" alt="Medium Icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Pi1998"><img src="/Icon/github.svg" alt="Github Icon"></a>
+                    </li>
+                    <li>
+                        <a href="https://wellfound.com/u/shinn-thant-swam-ye"><img src="/Icon/angellist.svg" alt="Angellist Icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact-image"></div>
+
+
+
+    </section>
+
+    <!-- <script src="popup.js"></script> -->
+    <script  src="/src/form.js"></script>
+    <script  src="/src/main.js"></script>
+  </body>
+</html>
