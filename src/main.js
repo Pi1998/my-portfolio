@@ -52,7 +52,7 @@ const data = [
   {
     name: 'To Do List',
     description: 'A simple and intuitive to-do list application to help users manage their daily tasks. Users can add, delete, and mark tasks as complete. It is built using JavaScript and styled with CSS to ensure responsiveness across devices.',
-    img: 'project-img/toDoList.png',
+    img: '/project-img/toDoList.png',
     firstlineTitle: 'To Do List',
     secondlineTitle: 'Task Management',
     languages: ['JavaScript', 'HTML', 'CSS'],
@@ -63,7 +63,7 @@ const data = [
   {
     name: 'AwesomeBooks',
     description: 'AwesomeBooks is an app that allows users to add, remove, and store books in their personal collection. Built using ES6 JavaScript, the app provides a simple and elegant way to manage reading lists, store book details, and supports local storage for persistent data.',
-    img: 'project-img/awesomeBook.png',
+    img: '/project-img/awesomeBook.png',
     firstlineTitle: 'AwesomeBooks',
     secondlineTitle: 'Manage Book Collection',
     languages: ['JavaScript', 'HTML', 'CSS'],
@@ -74,7 +74,7 @@ const data = [
   {
     name: 'MarvelFolio',
     description: 'MarvelFolio is an app that allows you to find comic books based on a Marvel character\'s name. Using an API, the app fetches information on the character and displays the list of related comic books.',
-    img: 'project-img/marvelFolio.png',
+    img: '/project-img/marvelFolio.png',
     firstlineTitle: 'MarvelFolio',
     secondlineTitle: 'Marvel Comic Finder',
     languages: ['React', 'Redux', 'HTML', 'CSS'],
@@ -85,7 +85,7 @@ const data = [
   {
     name: 'StreamHub',
     description: 'StreamHub is a web app designed for users to search and interact with movies and TV shows. It integrates APIs for fetching movie data and user interactions like likes, comments, and reservations. The app offers a user-friendly interface with optimized performance, interactive popups, counter functionality, and Jest unit testing to ensure reliability.',
-    img: 'project-img/streamHub.png',
+    img: '/project-img/streamHub.png',
     firstlineTitle: 'StreamHub',
     secondlineTitle: 'Find Movies Easily',
     languages: ['JavaScript', 'HTML', 'CSS'],
@@ -96,7 +96,7 @@ const data = [
   {
     name: 'InterArtction',
     description: 'The Interdisciplinary Exhibition, titled InterArtction, is an innovative and transformative event that brings together professionals, experts, and enthusiasts from various fields to explore the intersection of art and technology. This event will be held in different cities every two years, inviting organizations and individuals who are engaged in the world of open content, free software, open knowledge, and other related areas. We hope to foster collaboration on shared projects that advance the cause of the Commons, free culture, and open knowledge.',
-    img: 'project-img/interArtction.png',
+    img: '/project-img/interArtction.png',
     firstlineTitle: 'InterArtction',
     secondlineTitle: 'Exploring Art & Technology',
     languages: ['HTML', 'CSS', 'JavaScript'],
@@ -107,7 +107,7 @@ const data = [
   {
     name: 'Project-6',
     description: 'Coming Soon.....',
-    img: 'popup-img/Snapshoot-Portfolio-desktop.png',
+    img: '/popup-img/Snapshoot-Portfolio-desktop.png',
     firstlineTitle: 'Coming Soon...',
     secondlineTitle: '........',
     languages: ['PHP', 'CSS', 'JavaScript', 'HTML'],
@@ -135,11 +135,11 @@ const popUp = (i) => {
           <h2>${data[i].name}</h2>
           <div class="see-live-container">
             <a href="${data[i].linkLiveVersion}">See live</a>
-            <a href="${data[i].linkLiveVersion}"><img src="popup-img/Icon-Export.png" alt="Image of export icon"></a>
+            <a href="${data[i].linkLiveVersion}"><img src="/popup-img/Icon-Export.png" alt="Image of export icon"></a>
           </div>
           <div class="see-source-container">
             <a href="${data[i].linkSource}">See source</a>
-            <a href="${data[i].linkSource}"><img src="popup-img/Icon-GitHub.png" alt="Image of Github icon"></a>
+            <a href="${data[i].linkSource}"><img src="/popup-img/Icon-GitHub.png" alt="Image of Github icon"></a>
           </div>
         </div>
         <ul class="project-tech">
