@@ -37,7 +37,7 @@ body {
 }
 
 .first-intro {
-  background-image: url(/Icon/header-illsutration-mobile@2x.png);
+  background-image: url(Icon/header-illsutration-mobile@2x.png);
   background-size: 100%;
   background-position: bottom -4px right;
   background-repeat: no-repeat;
@@ -258,7 +258,7 @@ span {
 }
 
 .abt-me {
-  background-image: url(/Icon/illustration\ 2-about\ me\ mobile.png), url(/Icon/illustration\ 1-\ about\ me-mobile.png);
+  background-image: url(Icon/illustration\ 2-about\ me\ mobile.png), url(Icon/illustration\ 1-\ about\ me-mobile.png);
   background-size: 18%, 18%;
   background-position: 0% 90%, 100% 0%;
   background-repeat: no-repeat;
@@ -553,7 +553,7 @@ textarea {
 }
 
 .contact-image {
-  background-image: url(/images/form-bg.svg);
+  background-image: url(images/form-bg.svg);
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: right 0;
@@ -731,7 +731,7 @@ textarea {
 
   /* First intro section start */
   .first-intro {
-    background-image: url(/Icon/Header-llustration-desktop@2x.png);
+    background-image: url(Icon/Header-llustration-desktop@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -823,7 +823,7 @@ textarea {
 
   /* About Me */
   .abt-me {
-    background-image: url(/Icon/illustration-about-me-2-desktop.png), url(/Icon/illustration-about\ me-1-desktop.png);
+    background-image: url(Icon/illustration-about-me-2-desktop.png), url(Icon/illustration-about\ me-1-desktop.png);
     background-size: 18%, 18%;
     background-position: 0% 85%, 100% 0%;
     margin-top: 5%;
@@ -876,7 +876,7 @@ textarea {
     padding-bottom: 20%;
     padding-left: 15%;
     padding-right: 15%;
-    background-image: url(/Icon/Frame-1.png), url(/Icon/illustration-2-contact-form-desktop.png), url(/Icon/Frame2.png);
+    background-image: url(Icon/Frame-1.png), url(Icon/illustration-2-contact-form-desktop.png), url(Icon/Frame2.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 0% 90%, 25% 75%, 100% 100%;
     background-size: 13%, 10%, 15%;
