@@ -102,7 +102,6 @@ body {
   .button:active {
     background-color: #1f9865;
     box-shadow: 0 3px 5px #18724d;
-    /* transform: translateY(4px); */
     transform: translate(4px, 4px);
   }
   
