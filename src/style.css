@@ -553,7 +553,7 @@ textarea {
 }
 
 .contact-image {
-  background-image: url(images/form-bg.svg);
+  background-image: url(/images/form-bg.svg);
   background-size: 20%;
   background-repeat: no-repeat;
   background-position: right 0;
@@ -823,7 +823,7 @@ textarea {
 
   /* About Me */
   .abt-me {
-    background-image: url(/Icon/illustration-about-me-2-desktop.png), url(/Icon/illustration-about\ me-1-desktop.png);
+    background-image: url(/Icon/illustration-about-me-2-desktop.png), url(/Icon/illustration-about-me-1-desktop.png);
     background-size: 18%, 18%;
     background-position: 0% 85%, 100% 0%;
     margin-top: 5%;
