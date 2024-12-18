@@ -20,7 +20,7 @@ window.closeMenu = closeMenu;
 
 document.querySelectorAll('.menu-item').forEach((item) => {
   item.addEventListener('click', closeMenu);
-})
+});
 
 hamburger.addEventListener('click', toggleMenu);
 
