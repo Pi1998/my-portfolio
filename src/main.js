@@ -9,12 +9,18 @@ function toggleMenu() {
   // Disable scrolling when the menu is active
   body.classList.toggle('disable-scroll');
 }
+
 function closeMenu() {
   hamburger.classList.remove('active');
   navMobile.classList.remove('active');
   body.classList.remove('disable-scroll');
-  document.getElementById('navMobile').style.display = 'none';
 }
+
+window.closeMenu = closeMenu;
+
+document.querySelectorAll('.menu-item').forEach((item) => {
+  item.addEventListener('click', closeMenu);
+})
 
 hamburger.addEventListener('click', toggleMenu);
 
