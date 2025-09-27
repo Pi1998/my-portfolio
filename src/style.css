@@ -1,15 +1,26 @@
 :root {
-  --form-border-color: #d0d9d4;
+  /* DARK THEME COLORS */
+
+  /* BASE COLORS */
+  --dark-background-color: #1a1a2e;
+  --form-border-color: #4c4c6e;
+  --white-color: #f0f0f0;
+
+  /* ACCENT GREEN (Remains the primary accent color) */
   --green-color: #36b37e;
-  --white-color: #fff;
-  --button-hover-color: #7ebfa3;
-  --content-text-color: #42526e;
+
+  /* INTERACTION COLORS */
+  --button-hover-color: #55c88c;
   --button-active-color: #008552;
+
+  /* TEXT COLOR (Now a light gray for content on dark background) */
+  --content-text-color: #b0b0d6;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--dark-background-color);
 }
 
 /* .nav-container {
@@ -22,10 +33,8 @@ body {
   width: 100%;
   position: fixed;
   left: -100%;
-
-  /* padding-right: 30px; */
   padding-top: 20px;
-  background: var(--white-color);
+  background: var(--dark-background-color);
 }
 
 .mobile-menu.active {
@@ -39,9 +48,12 @@ body {
 .first-intro {
   background-image: url(/Icon/header-illsutration-mobile@2x.png);
   background-size: 100%;
-  background-position: bottom -4px right;
+  background-position: center;
   background-repeat: no-repeat;
-  margin-top: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .intro {
@@ -52,22 +64,21 @@ body {
 }
 
 .intro h1 {
-  color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  color: var(--white-color);
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  margin-top: 18%;
   margin-left: 27px;
   margin-right: 27px;
   margin-bottom: 3px;
 }
 
 .intro .intro2 {
-  color: #36b37e;
-  font-family: 'Inter', sans-serif;
+  color: var(--green-color);
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -79,8 +90,8 @@ body {
 }
 
 .text {
-  color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  color: var(--content-text-color);
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -121,13 +132,13 @@ span {
 .down-arrow {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .portfolio-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 2.5%;
 }
 
 .heading1 {
@@ -138,8 +149,8 @@ span {
 }
 
 .heading1 .heading {
-  color: #172b4d;
-  font-family: 'Inter', sans-serif;
+  color: var(--white-color);
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -172,8 +183,8 @@ span {
   border-radius: 8px;
   width: 327px;
   height: 474px;
-  background-color: #ebf0ee;
-  border: 1px solid #d0d9d4;
+  background-color: #2e2e4a;
+  border: 1px solid var(--form-border-color);
   margin-left: 6%;
   margin-bottom: 2%;
 }
@@ -181,16 +192,17 @@ span {
 .text-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: #fff;
+  background-color: var(--dark-background-color);
   border-radius: 8px;
   max-height: 222px;
 }
 
 .project-title {
+  color: var(--white-color);
   text-align: center;
   margin: 3%;
   padding: 0 1%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -210,14 +222,14 @@ span {
 }
 
 .tag li {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #3a4a42;
-  background: #ebf0ee;
+  color: var(--green-color);
+  background: #3c3c5c;
   border-radius: 4px;
   padding: 2% 3.8%;
   margin-top: 4%;
@@ -229,19 +241,19 @@ span {
 }
 
 .btn {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #fff;
+  color: var(--white-color);
   width: 122px;
   height: 48px;
   letter-spacing: 0.03em;
-  background: #36b37f;
+  background: var(--green-color);
   border: none;
   border-radius: 4px;
-  border-color: #fff;
+  border-color: var(--white-color);
   text-align: center;
 
   /* margin-left: 29%; */
@@ -249,16 +261,17 @@ span {
 }
 
 .btn:hover {
-  background: #36b37f;
+  background: var(--button-hover-color);
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .btn:active {
-  background: #008552;
+  background: var(--button-active-color);
 }
 
 .abt-me {
-  background-image: url(/Icon/illustration-2-about-me-mobile.png), url(/Icon/illustration-1-about-me-mobile.png);
+  background-image: url(/Icon/illustration-2-about-me-mobile.png),
+    url(/Icon/illustration-1-about-me-mobile.png);
   background-size: 18%, 18%;
   background-position: 0% 90%, 100% 0%;
   background-repeat: no-repeat;
@@ -266,12 +279,14 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20%;
+  /* margin-top: 20%; */
   margin-bottom: 8%;
+  height: 100vh;
 }
 
 .head-abt-me {
-  font-family: 'Inter', sans-serif;
+  color: var(--white-color);
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -283,45 +298,45 @@ span {
 }
 
 .txt-abt-me {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
   text-align: center;
-  color: #42526e;
+  color: var(--content-text-color);
   padding-left: 5%;
   padding-right: 5%;
   margin-top: 2%;
 }
 
 .btn-project {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #fff;
+  color: var(--white-color);
   width: 153px;
   height: 48px;
   letter-spacing: 0.03em;
-  background: #36b37f;
+  background: var(--green-color);
   border: none;
   border-radius: 4px;
-  border-color: #fff;
+  border-color: var(--white-color);
   text-align: center;
   margin-bottom: 10%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-project:hover {
-  background: #36b37f;
+  background: var(--button-hover-color);
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   transform: translate(1px, 1px);
 }
 
 .btn-project:active {
-  background: #008552;
+  background: var(--button-active-color);
 }
 
 .mobile-menu ul {
@@ -352,8 +367,8 @@ span {
   border-radius: 8px;
   width: 327px;
   height: 316px;
-  background: #ebf0ee;
-  border: 1px solid #d0d9d4;
+  background: #2e2e4a;
+  border: 1px solid var(--form-border-color);
 
   /* margin-bottom: 4%;
   margin-top: 2%; */
@@ -365,13 +380,13 @@ span {
 }
 
 .item-head {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 133%;
   text-align: center;
-  color: #344563;
+  color: var(--white-color);
   margin-top: 0;
   margin-bottom: 8%;
 }
@@ -390,15 +405,15 @@ span {
 
 .item-content li {
   padding: 3% 2.5%;
-  background: #fff;
+  background: #1a1a2e;
   border-radius: 8px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 133%;
   letter-spacing: 0.03em;
-  color: #36b37e;
+  color: var(--green-color);
 }
 
 /* contact section */
@@ -423,13 +438,13 @@ hr {
 }
 
 .end-text {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 130%;
   text-align: center;
-  color: #172b4d;
+  color: var(--white-color);
   padding: 0 5%;
 }
 
@@ -476,7 +491,7 @@ textarea {
   right: 0;
   top: 0;
   bottom: 0;
-  background: var(--white-color);
+  background: #2e2e4a;
   border: 1px solid #60c095;
   border-radius: 4px;
   resize: none;
@@ -488,15 +503,15 @@ textarea {
   position: inherit;
   width: 100%;
   padding: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
-  background: var(main-background-color);
-  color: #3c3c3c;
+  background: #2e2e4a;
+  color: var(--white-color);
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -505,15 +520,15 @@ textarea {
   position: inherit;
   width: 100%;
   padding: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
   border: 1px solid var(--form-border-color);
   border-radius: 4px;
-  background: var(main-background-color);
-  color: #3c3c3c;
+  background: #2e2e4a;
+  color: var(--white-color);
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -524,13 +539,13 @@ textarea {
 }
 
 .form-btn:hover {
-  background: #36b37f;
+  background: var(--button-hover-color);
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   transform: translate(1px, 1px);
 }
 
 .form-btn:active {
-  background: #008552;
+  background: var(--button-active-color);
 }
 
 .contact-form .form-btn {
@@ -566,7 +581,7 @@ textarea {
 }
 
 .email-text {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -604,8 +619,8 @@ textarea {
 }
 
 .mobile-menu ul li a {
-  color: #3a4a42;
-  font-family: 'Inter', sans-serif;
+  color: var(--white-color);
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -639,7 +654,7 @@ textarea {
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background-color: var(--content-text-color);
+  background-color: var(--white-color);
   z-index: 2;
 }
 
@@ -678,6 +693,16 @@ textarea {
     font-size: 14px;
     line-height: 20px;
   }
+
+  .portfolio-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  .portfolio-container {
+    width: 90%;
+  }
 }
 
 /* Media Queries for Desktop Version */
@@ -704,7 +729,7 @@ textarea {
   .desktop-menu li {
     list-style-type: none;
     display: inline-block;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -717,16 +742,16 @@ textarea {
   }
 
   .desktop-menu li a {
-    color: #344563;
+    color: var(--content-text-color);
     text-decoration: none;
   }
 
   .desktop-menu li a:hover {
-    color: #7ebfa3;
+    color: var(--button-hover-color);
   }
 
   .desktop-menu li a:active {
-    color: #008552;
+    color: var(--button-active-color);
   }
 
   /* First intro section start */
@@ -734,8 +759,10 @@ textarea {
     background-image: url(/Icon/Header-llustration-desktop@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
-    height: 100%;
+    background-position: center center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
   }
 
   .intro h1 .intro-mobile {
@@ -765,8 +792,8 @@ textarea {
 
   .down-arrow {
     margin-top: 2%;
-    margin-bottom: 0;
-    padding-bottom: 30%;
+    margin-bottom: 8%;
+    /* padding-bottom: 30%; */
   }
 
   /* First intro section End */
@@ -774,7 +801,7 @@ textarea {
   /* Recent Work Section Start */
 
   .portfolio-container {
-    width: 100%;
+    width: 90%;
     margin-top: 0;
   }
 
@@ -813,7 +840,7 @@ textarea {
     flex-direction: row;
     align-items: center;
     padding: 8px 12px;
-    background: #ebf0ee;
+    background: #3c3c5c;
     border-radius: 4px;
   }
 
@@ -823,12 +850,13 @@ textarea {
 
   /* About Me */
   .abt-me {
-    background-image: url(/Icon/illustration-about-me-2-desktop.png), url(/Icon/illustration-about-me-1-desktop.png);
+    background-image: url(/Icon/illustration-about-me-2-desktop.png),
+      url(/Icon/illustration-about-me-1-desktop.png);
     background-size: 18%, 18%;
     background-position: 0% 85%, 100% 0%;
     margin-top: 5%;
     margin-bottom: 8%;
-    padding-top: 7.5%;
+    /* padding-top: 7.5%; */
   }
 
   .head-abt-me {
@@ -876,7 +904,8 @@ textarea {
     padding-bottom: 20%;
     padding-left: 15%;
     padding-right: 15%;
-    background-image: url(/Icon/Frame-1.png), url(/Icon/illustration-2-contact-form-desktop.png), url(/Icon/Frame2.png);
+    background-image: url(/Icon/Frame-1.png),
+      url(/Icon/illustration-2-contact-form-desktop.png), url(/Icon/Frame2.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 0% 90%, 25% 75%, 100% 100%;
     background-size: 13%, 10%, 15%;
@@ -905,12 +934,12 @@ textarea {
   }
 
   .form-btn:hover {
-    background: #36b37f;
+    background: var(--button-hover-color);
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
 
   .form-btn:active {
-    background: #008552;
+    background: var(--button-active-color);
   }
 
   .email-container {
@@ -920,7 +949,7 @@ textarea {
   hr {
     display: block;
     height: 1px;
-    background-color: #dfe1e6;
+    background-color: var(--form-border-color);
   }
 
   .icon-section {
@@ -938,8 +967,6 @@ textarea {
   .contact-image {
     display: none;
   }
-
-  /* DOM */
 
   .hamburger-container {
     display: none;
