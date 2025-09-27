@@ -138,7 +138,7 @@ span {
 
 .portfolio-container {
   width: 100%;
-  margin: 2.5%;
+  /* margin: 2.5%; */
 }
 
 .heading1 {
@@ -695,13 +695,13 @@ textarea {
   }
 
   .portfolio-container {
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 350px) {
   .portfolio-container {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -801,7 +801,7 @@ textarea {
   /* Recent Work Section Start */
 
   .portfolio-container {
-    width: 90%;
+    width: 100%;
     margin-top: 0;
   }
 

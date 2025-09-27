@@ -161,11 +161,11 @@ const popUp = (i) => {
         <div class="project-title-container">
           <h2>${data[i].name}</h2>
           <div class="see-live-container">
-            <a href="${data[i].linkLiveVersion}">See live</a>
+            <a href="${data[i].linkLiveVersion}">Live</a>
             <a href="${data[i].linkLiveVersion}"><img src="/popup-img/Icon-Export.png" alt="Image of export icon"></a>
           </div>
           <div class="see-source-container">
-            <a href="${data[i].linkSource}">See source</a>
+            <a href="${data[i].linkSource}">Source</a>
             <a href="${data[i].linkSource}"><img src="/popup-img/Icon-GitHub.png" alt="Image of Github icon"></a>
           </div>
         </div>
