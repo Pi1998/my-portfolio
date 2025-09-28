@@ -33,12 +33,17 @@ body {
   width: 100%;
 } */
 
+button {
+  cursor: pointer;
+}
+
 .mobile-menu {
   width: 100%;
   position: fixed;
   left: -100%;
   padding-top: 20px;
   background: var(--dark-background-color);
+  z-index: 10;
 }
 
 .mobile-menu.active {
@@ -139,6 +144,7 @@ span {
   margin-top: 2%;
   margin-bottom: 5%;
   cursor: pointer;
+  z-index: 2;
 }
 
 .down-arrow img {
@@ -148,7 +154,8 @@ span {
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
