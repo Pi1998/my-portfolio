@@ -56,13 +56,15 @@ button {
 
 .first-intro {
   background-image: url(/Icon/header-illsutration-mobile@2x.png);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+  transition: background-position 0.1s ease-out;
 }
 
 .intro {
@@ -96,6 +98,17 @@ button {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0 5%;
+}
+
+.typing::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .text {
@@ -148,9 +161,34 @@ span {
 }
 
 .down-arrow img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   animation: bounce 1.5s infinite;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.up-arrow {
+  opacity: 0;
+  position: fixed;
+  bottom: 8%;
+  right: 7%;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.up-arrow img {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.up-arrow.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 @keyframes bounce {
