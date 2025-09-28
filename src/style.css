@@ -148,9 +148,34 @@ span {
 }
 
 .down-arrow img {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   animation: bounce 1.5s infinite;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.up-arrow {
+  opacity: 0;
+  position: fixed;
+  bottom: 8%;
+  right: 7%;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.up-arrow img {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.up-arrow.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 @keyframes bounce {
@@ -299,8 +324,7 @@ span {
 }
 
 .abt-me {
-  background-image:
-    url(/Icon/illustration-2-about-me-mobile.png),
+  background-image: url(/Icon/illustration-2-about-me-mobile.png),
     url(/Icon/illustration-1-about-me-mobile.png);
   background-size: 18%, 18%;
   background-position: 0% 90%, 100% 0%;
@@ -882,8 +906,7 @@ textarea {
 
   /* About Me */
   .abt-me {
-    background-image:
-      url(/Icon/illustration-about-me-2-desktop.png),
+    background-image: url(/Icon/illustration-about-me-2-desktop.png),
       url(/Icon/illustration-about-me-1-desktop.png);
     background-size: 18%, 18%;
     background-position: 0% 85%, 100% 0%;
@@ -938,10 +961,8 @@ textarea {
     padding-bottom: 20%;
     padding-left: 15%;
     padding-right: 15%;
-    background-image:
-      url(/Icon/Frame-1.png),
-      url(/Icon/illustration-2-contact-form-desktop.png),
-      url(/Icon/Frame2.png);
+    background-image: url(/Icon/Frame-1.png),
+      url(/Icon/illustration-2-contact-form-desktop.png), url(/Icon/Frame2.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 0% 90%, 25% 75%, 100% 100%;
     background-size: 13%, 10%, 15%;
