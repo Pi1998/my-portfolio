@@ -263,3 +263,63 @@ upArrow.addEventListener("click", () => {
     behavior: "smooth",
   })
 })
+
+// first-intro background animation
+
+const firstIntro = document.querySelector(".first-intro")
+
+let timeout
+window.addEventListener("mousemove", (e) => {
+  if (timeout) cancelAnimationFrame(timeout)
+  timeout = requestAnimationFrame(() => {
+    const { innerWidth, innerHeight } = window
+    const xPercent = (e.clientX / innerWidth - 0.5) * 2
+    const yPercent = (e.clientY / innerHeight - 0.5) * 2
+    const moveX = xPercent * 20
+    const moveY = yPercent * 20
+    firstIntro.style.backgroundPosition = `calc(50% + ${moveX}px) calc(50% + ${moveY}px)`
+  })
+})
+
+// typing animation effect
+const texts = ["Shinn Thant (PI).", "a Junior Developer.", "a Web Developer.", "a Lifelong Learner."];
+let count = 0;
+let index = 0;
+let current = '';
+let isDeleting = false;
+
+function typeLoop() {
+  const typingElement = document.querySelector('.typing');
+  const fullText = texts[count];
+
+  // Determine current text
+  if (isDeleting) {
+    current = fullText.substring(0, index);
+    index--; // decrement after using
+  } else {
+    current = fullText.substring(0, index);
+    index++; // increment after using
+  }
+
+  typingElement.textContent = current;
+
+  let speed = isDeleting ? 80 : 150; // faster when deleting
+
+  // switch to delete mode after fully typed
+  if (!isDeleting && index > fullText.length) {
+    isDeleting = true;
+    index = fullText.length; // ensure last character stays visible
+    speed = 1200; // pause at end
+  }
+  // move to next word after fully deleted
+  else if (isDeleting && index < 0) {
+    isDeleting = false;
+    count = (count + 1) % texts.length; // loop
+    index = 0; // reset index for next word
+  }
+
+  setTimeout(typeLoop, speed);
+}
+
+typeLoop();
+

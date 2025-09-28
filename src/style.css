@@ -56,13 +56,15 @@ button {
 
 .first-intro {
   background-image: url(/Icon/header-illsutration-mobile@2x.png);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+  transition: background-position 0.1s ease-out;
 }
 
 .intro {
@@ -96,6 +98,17 @@ button {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0 5%;
+}
+
+.typing::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .text {
