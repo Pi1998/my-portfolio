@@ -17,6 +17,10 @@
   --content-text-color: #b0b0d6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -29,12 +33,17 @@ body {
   width: 100%;
 } */
 
+button {
+  cursor: pointer;
+}
+
 .mobile-menu {
   width: 100%;
   position: fixed;
   left: -100%;
   padding-top: 20px;
   background: var(--dark-background-color);
+  z-index: 10;
 }
 
 .mobile-menu.active {
@@ -134,10 +143,30 @@ span {
   justify-content: center;
   margin-top: 2%;
   margin-bottom: 5%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.down-arrow img {
+  width: 40px;
+  height: 40px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 .portfolio-container {
   width: 100%;
+
   /* margin: 2.5%; */
 }
 
@@ -270,7 +299,8 @@ span {
 }
 
 .abt-me {
-  background-image: url(/Icon/illustration-2-about-me-mobile.png),
+  background-image:
+    url(/Icon/illustration-2-about-me-mobile.png),
     url(/Icon/illustration-1-about-me-mobile.png);
   background-size: 18%, 18%;
   background-position: 0% 90%, 100% 0%;
@@ -279,6 +309,7 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   /* margin-top: 20%; */
   margin-bottom: 8%;
   height: 100vh;
@@ -793,6 +824,7 @@ textarea {
   .down-arrow {
     margin-top: 2%;
     margin-bottom: 8%;
+
     /* padding-bottom: 30%; */
   }
 
@@ -850,12 +882,14 @@ textarea {
 
   /* About Me */
   .abt-me {
-    background-image: url(/Icon/illustration-about-me-2-desktop.png),
+    background-image:
+      url(/Icon/illustration-about-me-2-desktop.png),
       url(/Icon/illustration-about-me-1-desktop.png);
     background-size: 18%, 18%;
     background-position: 0% 85%, 100% 0%;
     margin-top: 5%;
     margin-bottom: 8%;
+
     /* padding-top: 7.5%; */
   }
 
@@ -904,8 +938,10 @@ textarea {
     padding-bottom: 20%;
     padding-left: 15%;
     padding-right: 15%;
-    background-image: url(/Icon/Frame-1.png),
-      url(/Icon/illustration-2-contact-form-desktop.png), url(/Icon/Frame2.png);
+    background-image:
+      url(/Icon/Frame-1.png),
+      url(/Icon/illustration-2-contact-form-desktop.png),
+      url(/Icon/Frame2.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 0% 90%, 25% 75%, 100% 100%;
     background-size: 13%, 10%, 15%;
