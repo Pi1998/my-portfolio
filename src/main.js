@@ -207,7 +207,9 @@ insertAfter(div, parentElement.lastElementChild)
 data.forEach((project, i) => {
   div.innerHTML += `
     <div id="project${i}" class="work-cards animation-left">
-      <div class="img-placeholder"><img class="img-card-cover" src="${project.img}"></div>
+      <div class="img-placeholder"><img class="img-card-cover" src="${
+        project.img
+      }"></div>
       <div class="work-desc">
         <p>${project.firstlineTitle}<br>${project.secondlineTitle}</p>
         <ul class="languages">
@@ -224,4 +226,22 @@ const btns = document.querySelectorAll(".seeproject")
 
 btns.forEach((btn, index) => {
   btn.addEventListener("click", () => popUp(index))
+})
+
+//down-arrow animation
+
+// function scrollToNext(button) {
+//   const currentSection = button.closest("section")
+//   const nextSection = currentSlide.nextElementSibling
+//   if (nextSection) {
+//     nextSection.scrollIntoView({ behavior: "smooth" })
+//   }
+// }
+document.querySelectorAll(".down-arrow").forEach((el) => {
+  el.addEventListener("click", (e) => {
+    const currentSection = e.currentTarget.closest("section")
+    if (!currentSection) return
+    const nextSection = currentSection.nextElementSibling
+    if (nextSection) nextSection.scrollIntoView({ behavior: "smooth" })
+  })
 })
